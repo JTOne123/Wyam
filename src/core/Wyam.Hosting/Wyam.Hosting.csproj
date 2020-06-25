@@ -6,7 +6,15 @@
     <RepositoryUrl>https://github.com/Wyamio/Wyam.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
   <ItemGroup>
     <None Remove="LiveReload\livereload.js" />
   </ItemGroup>
